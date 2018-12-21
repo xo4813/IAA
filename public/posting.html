@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <ul>
+        <li><a href="/">홈</a></li>
+        <li><a href="/loginLocalPassport">로그인</a></li>
+        <li><a href="/logout">로그아웃</a></li>
+        <li><a href="/auth/google">구글로 로그인하기 </a></li>
+        <li><a href="/register">회원가입하기 </a></li>
+        <li><a href="/posting">포스팅</a></li>
+        <li><a href="/search">검색</a></li>
+        <li><a href="/statChart">스탯차트</a></li>
+    </ul>
+            
+    <h1>for posting</h1>
+    <main class="page">
+        <section class="clean-block features">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">의견 포스팅</h2>
+                    <p> 당신의 시야를 보여주세요.</p>
+                </div>
+                <form id="twit-form" action="/postings/register_posting" method="post" enctype='multipart/form-data'>
+                <!-- <form id="twit-form" action="/users/register_posting" method="post" enctype="multipart/form-data"> -->
+                    <div class="col-md-25 col-sm-25">
+                        <div class="form-group col-md-6 col-sm-6"><label for="subtitle">제목 : </label><input class="form-control input-sm"
+                                type="text" name="subtitle" placeholder="...."></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="content">내용 : </label><input class="form-control input-sm"
+                                type="text" name="content" placeholder="OOOO@OOO.OOO"></div>
+                        <!-- <div class="form-group col-md-6 col-sm-6"><label for="predictPrice">예상가격 :</label><input class="form-control input-sm"
+                                type="text" name="predictPrice" placeholder="'-'을 넣지 마시고 입력해주세요. ex) 01012341234"></div> -->
+                        <div class="form-group col-md-6 col-sm-6"><label for="selectCompany">기업 선택 : </label><textarea
+                                class="form-control input-sm" name="predictCompany" rows="3" placeholder="정확한 주소를 세부적으로 입력해주세요. 관련 서류가 배송될 때 필요합니다."></textarea></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="predictDay">예상일자 : </label><input class="form-control input-sm"
+                                type="text" name="predictDay" placeholder="predictDay"></div>
+                                <!--  -->
+                        <div class="form-group col-md-6 col-sm-6"><label for="accountEmail">accountEmail : </label><input class="form-control input-sm"
+                                type="text" name="accountEmail" placeholder="accountEmail"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="accountName">accountName : </label><input class="form-control input-sm"
+                                type="text" name="accountName" placeholder="accountName"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="accountGrade">accountGrade : </label><input class="form-control input-sm"
+                                type="text" name="accountGrade" placeholder="accountGrade"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="profilePicture">profilePicture : </label><input class="form-control input-sm"
+                                type="text" name="profilePicture" placeholder="profilePicture"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="pastPrice">pastPrice : </label><input class="form-control input-sm"
+                                type="text" name="pastPrice" placeholder="pastPrice"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="predictPrice">predictPrice : </label><input class="form-control input-sm"
+                                type="text" name="predictPrice" placeholder="predictPrice"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="buyState">buyState : </label><input class="form-control input-sm"
+                                type="text" name="buyState" placeholder="buyState"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="sellState">sellState : </label><input class="form-control input-sm"
+                                type="text" name="sellState" placeholder="sellState"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="middleState">middleState : </label><input class="form-control input-sm"
+                                type="text" name="middleState" placeholder="middleState"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="standardUnit">standardUnit : </label><input class="form-control input-sm"
+                                type="text" name="standardUnit" placeholder="standardUnit"></div>
+                                <!--  -->
+                        <div class="form-group col-md-6 col-sm-6"><label for="warrantLink">근거 링크 : </label><input class="form-control input-sm"
+                                type="text" name="warrantLink" placeholder="warrantLink"></div>
+                        <div class="form-group col-md-6 col-sm-6"><label for="warrantImage">근거 이미지 : </label><input class="form-control input-sm"
+                            type="text" name="warrantImage" placeholder="warrantLink">
+                            <span
+                                class="help-block">
+                                <div class="form-group col-md-6 col-sm-6"><label for="months">
+                                        <select class="form-control input-sm" name="months">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                        </select>
+                                        <select class="form-control input-sm" name="years">
+                                            <option>일</option>
+                                            <option>주</option>
+                                            <option>달</option>
+                                            <option>분기</option>
+                                            <option>년</option>
+
+                                        </select>
+                                </div>
+
+
+                        </div>
+
+
+                        <div class="form-group col-md-10 col-sm-10"><label for="documents"></label><input type="file"
+                                name="documents" accept="image/*">
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-group col-md-10 col-sm-10 pull-right"><input class="btn btn-primary" type="submit"
+                                value="포스팅 등록"></div>
+                    </div>
+                </form>
+
+
+            </div>
+        </section>
+
+        <div id="disqus_thread"></div>
+        <script>
+        
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web8930.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+
+        <!-- <script>
+            if (document.getElementById('img')) {
+                document.getElementById('img').addEventListener('change', function (e) {
+                    var formData = new FormData();
+                    console.log(this, this.files);
+                    formData.append('img', this.files[0]);
+                    var xhr = new XMLHttpRequest();
+                    xhr.onload = function () {
+                        if (xhr.status === 200) {
+                            var url = JSON.parse(xhr.responseText).url;
+                            document.getElementById('img-url').value = url;
+                            document.getElementById('img-preview').src = url;
+                            document.getElementById('img-preview').style.display = 'inline';
+                        } else {
+                            console.error(xhr.responseText);
+                        }
+                    };
+                    xhr.open('POST', '/post/img');
+                    xhr.send(formData);
+                });
+            }
+        </script> -->
+    </main>
+</body>
+
+</html>

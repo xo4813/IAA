@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <ul>
+        <li><a href="/">홈</a></li>
+        <li><a href="/loginLocalPassport">로그인</a></li>
+        <li><a href="/logout">로그아웃</a></li>
+        <li><a href="/auth/google">구글로 로그인하기 </a></li>
+        <li><a href="/register">회원가입하기 </a></li>
+        <li><a href="/posting">포스팅</a></li>
+        <li><a href="/search">검색</a></li>
+        <li><a href="/statChart">스탯차트</a></li>
+    </ul>
+    <h1>for Stat Charts</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>사진</th>
+                <th>HIT/MISS</th>
+                <th>평균 HIT 도달기간</th>
+                <th>HIT 콤보</th>
+                <th>순위</th>
+                <th>종합점수</th>
+                <th>즐겨찾기</th>
+                <th>채팅창</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table>최근 HIT 적중률
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Week</th>
+                <th>Month</th>
+            </tr>
+        </thead>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </table>
+
+    <br>
+
+    <table>최근 정확도 그래프
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Week</th>
+                <th>Month</th>
+            </tr>
+        </thead>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </table>
+
+    <br>
+
+    <table>현재가 목표가 가격차이
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Week</th>
+                <th>Month</th>
+            </tr>
+        </thead>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </table>
+
+    <br>
+
+    <table>선호 포지션
+        <thead>
+            <tr>
+                <th>매수</th>
+                <th>중립</th>
+                <th>매도</th>
+            </tr>
+        </thead>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </table>
+
+    <br>
+
+    <table>현재가 목표가 가격차이
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Week</th>
+                <th>Month</th>
+            </tr>
+        </thead>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </table>
+<iframe width=250 height=500 src="http://localhost:8005/room">
+</iframe>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://web8930.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</body>
+
+</html>

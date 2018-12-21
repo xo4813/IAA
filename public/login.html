@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  <ul>
+    <li><a href="/">홈</a></li>
+    <li><a href="/loginLocalPassport">로그인</a></li>
+    <li><a href="/logout">로그아웃</a></li>
+    <li><a href="/auth/google">구글로 로그인하기 </a></li>
+    <li><a href="/register">회원가입하기 </a></li>
+    <li><a href="/posting">포스팅</a></li>
+    <li><a href="/search">검색</a></li>
+    <li><a href="/statChart">스탯차트</a></li>
+</ul>
+  <form action="/users/login" method="post">
+    <input type="text" placeholder="아이디" name="loginId">
+    <input type="text" placeholder="비번" name="loginPwd">
+    <input type="submit" value="로그인">
+  </form>
+  <!-- <a href="#">구글로 로그인하기</a> -->
+</body>
+</html>
